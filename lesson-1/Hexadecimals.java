@@ -1,5 +1,6 @@
 public class Hexadecimals {
     public static void main(String[] args) {
+        // Tipos de datos primitivos
         byte num1 = (byte)0xff;
         System.out.println(num1);
         short num2 = (short)0xff;

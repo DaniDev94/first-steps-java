@@ -7,6 +7,7 @@ public class Precedence {
         n = 2;
         int x = ++n+2+3*n++;
         n = 2;
+        // Se el paréntesis para que se ejecute primero el incremento y luego la multiplicación
         int y = ++n+2+3*(n+++1);
         System.out.println(x); // 3+2+3*3 = 14
         System.out.println(y); // 4+2+3*4 = 17

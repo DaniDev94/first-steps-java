@@ -4,7 +4,8 @@ public class ScannerExample {
     public static void main(String[] args) {
         Scanner keyboardInput = new Scanner(System.in);
         // basicUsage(keyboardInput);
-        basicError(keyboardInput);
+        // basicError(keyboardInput);
+        loopUsage(keyboardInput);
     }
 
     public static void basicUsage(Scanner scanner) {
@@ -30,5 +31,14 @@ public class ScannerExample {
             System.out.println("Your name is: " + name); // Nunca se ejecuta ya que al utilizar nextInt() se queda un salto de línea en el buffer (\n)
 
         scanner.close();
+    }
+
+    public static void loopUsage(Scanner scanner) {
+       String randomText;
+       do {
+              System.out.print("Enter text other than \"exit\" to continue in the loop: ");
+              randomText = scanner.nextLine();
+              System.out.println("You entered: " + randomText);
+         } while (!randomText.equals("exit"));
     }
 }
